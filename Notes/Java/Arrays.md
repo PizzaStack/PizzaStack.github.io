@@ -22,7 +22,7 @@ int[] literalArray = {1, 2, 3};
 
 // Two-Dimensional Arrays
 int[][] instanced2DArray = new int[3][4];
-int[][] literal2DArray = {{1, 2}, {3, 4}, {5, 6}};
+int[][] literal2DArray = { { 1, 2 }, { 3, 4 }, { 5, 6 } };
 ```
 
 ## Iteration
