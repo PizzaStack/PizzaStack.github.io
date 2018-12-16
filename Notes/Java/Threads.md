@@ -1,4 +1,3 @@
-# [Return to Index](https://pizzastack.github.io)
 # Threads
 A *thread* is a unit of program execution that runs independently from other threads. Java programs can consist of multiple threads of execution that behave as if they were running on independent CPUs.
 

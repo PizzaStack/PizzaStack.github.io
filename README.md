@@ -1,4 +1,4 @@
-# [PizzaStack Cohort](https://pizzastack.github.io)
+# PizzaStack Cohort
 Notes, Demos, and Code Snippets
 
 # Java
@@ -14,6 +14,6 @@ Notes, Demos, and Code Snippets
 - [Maven](./Notes/Tools/Maven.md)
 
 ## Demos
-- [Builder](.Demos/Builder.md)
-- [Dependency Injection](.Demos/DependencyInjection.md)
-- [Threads](.Demos/Threads.md)
+- [Builder](./Demos/Builder.md)
+- [Dependency Injection](./Demos/DependencyInjection.md)
+- [Threads](./Demos/Threads.md)

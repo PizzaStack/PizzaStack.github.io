@@ -1,4 +1,3 @@
-# [Return to Index](https://pizzastack.github.io)
 # Design Patterns: Builder
 This constructor may change as new requirements are introduced, or users may accidentally switch their arguments and introduce bad data. A Builder can help solve this.
 

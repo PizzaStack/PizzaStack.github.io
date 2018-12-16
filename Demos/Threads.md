@@ -1,4 +1,3 @@
-# [Return to Index](https://pizzastack.github.io)
 # Threads
 Besides the main thread, developers can instantiate their own when:
 
