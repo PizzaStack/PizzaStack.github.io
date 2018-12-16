@@ -1,4 +1,4 @@
-# [PizzaStack.github.io](/README.md)
+# [PizzaStack Cohort](https://pizzastack.github.io)
 Notes, Demos, and Code Snippets
 
 # Java

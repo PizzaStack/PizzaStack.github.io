@@ -1,4 +1,4 @@
-# [Return to Index](/README.md)
+# [Return to Index](https://pizzastack.github.io)
 # Arrays
 ## Declaration
 Java Arrays are special reference types that store similarly typed data iteratively. A pair of brackets define an array of some data type, and can be written anywhere after the type:

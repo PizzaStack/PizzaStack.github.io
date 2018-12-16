@@ -1,4 +1,4 @@
-# [Return to Index](/README.md)
+# [Return to Index](https://pizzastack.github.io)
 # Design Patterns: Dependency Injection
 Some classes require another class, a dependency. While the dependency can be defined in the dependant class's own constructor, this introduces several problems such as tightly coupling the two classes and introducing difficulties during unit testing. To solve this, we can inject the dependency as an argument into the dependant class's constructor or setter.
 
