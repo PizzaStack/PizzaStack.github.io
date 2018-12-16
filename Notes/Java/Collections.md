@@ -1,3 +1,4 @@
+# [Return to Index](/README.md)
 # Collections API
 Java provides the **Collection** interface which provides a framework for several diffrent containers which will be disscussed below. All interfaces except **Map** share **Collection** as their superinterface.  
   
