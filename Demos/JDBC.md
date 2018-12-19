@@ -35,3 +35,24 @@ try (
     
 } 
 ```
+
+# Password credentials
+Hardcoding url, username, and password is not secure, especially once your source code is pushed to public repositories online. An alternative is to save your information to a properties file:
+
+### connection.properties
+```
+url = jdbc:postgresql://host:port/database
+username = databaseuser
+password = password
+```
+
+Then, in your Java application, load in the properties using `java.util.Properties`
+```java
+Properties properties = new Properties();
+properties.load(new FileInputStream("connection.properties"));
+
+String url = properties.getProperty("url");
+String username = properties.getProperty("username");
+String password = properties.getProperty("password");
+```
+Then simply remember to never add your `connection.properties` file to your git repository.
