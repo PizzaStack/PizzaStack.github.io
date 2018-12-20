@@ -1,13 +1,18 @@
 # PizzaStack Cohort
 Notes, Demos, and Code Snippets
 
-# Java
-## Notes
+## Java
 - [Basics](./Notes/Java/Basics.md)
 - [Arrays](./Notes/Java/Arrays.md)
 - [Collections](./Notes/Java/Collections.md)
 - [I/O](./Notes/Java/IO.md)
 - [Threads](./Notes/Java/Threads.md)
+
+## PostgreSQL
+- [RDBMS](./Notes/PostgreSQL/RDBMS.md)
+- [Normalization](./Notes/PostgreSQL/Normalization.md)
+- [SQL](./Notes/PostgreSQL/SQL.md)
+- [JDBC](./Notes/PostgreSQL/JDBC.md)
 
 ## Tools
 - [JVM](./Notes/Tools/JVM.md)
