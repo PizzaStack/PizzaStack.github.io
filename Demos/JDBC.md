@@ -56,3 +56,53 @@ String username = properties.getProperty("username");
 String password = properties.getProperty("password");
 ```
 Then simply remember to never add your `connection.properties` file to your git repository.
+
+# SQL CLI program
+A demonstration of various JDBC methods
+```java
+String url = "jdbc:postgresql://host:port/database";
+String username = "databaseuser"
+String password = "password"
+String sql;
+
+// Connect to a Postgres instance and set Scanner to stdin
+try (Connection connection = DriverManager.getConnection(url, username, password);
+        Scanner scanner = new Scanner(System.in);) {
+    // Loop after each user input
+    while (true) {
+        Statement statement = connection.createStatement();
+        System.out.print("sql> ");
+        sql = scanner.nextLine();
+        if (sql.equalsIgnoreCase("quit"))
+            break;
+
+        // Statement.execute(String query) returns true if ResultSet
+        boolean isResultSet = statement.execute(sql);
+        if (isResultSet) {
+            // Get and print column names from metadata
+            ResultSet resultSet = statement.getResultSet();
+            ResultSetMetaData rsmd = resultSet.getMetaData();
+            for (int j = 1; j <= rsmd.getColumnCount(); j++) {
+                System.out.print(rsmd.getColumnLabel(j) + "\t");
+            }
+            System.out.println();
+
+            // Get and print column values from ResultSet
+            while (resultSet.next()) {
+                for (int i = 1; i <= rsmd.getColumnCount(); i++) {
+                    System.out.print(resultSet.getString(i) + "\t");
+                }
+                System.out.println();
+            }
+            resultSet.close();
+        } else {
+            // If other DML, return rows affection
+            System.out.println(statement.getUpdateCount() + " rows affected");
+        } 				
+        statement.close();
+    }
+
+} catch (SQLException e) {
+    e.printStackTrace();
+}
+```
