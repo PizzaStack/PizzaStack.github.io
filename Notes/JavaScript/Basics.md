@@ -1,0 +1,15 @@
+# JavaScript
+JavaScript is an object-oriented scripting language supported by most web browsers using an engine such as **V8** on Chrome and **SpiderMonkey** on Firefox. Source code is directly translated (and now JIT compiled as well) into instructions to be run by the browser. JavaScript is **loosely-typed** and supports **higher-order functions**.
+
+## Features
+* **Loose typing**: 
+Variables in JavaScript are dynamically typed, and not constrained to one type. Any variable can be assigned and re-assigned values of any type.
+
+* **Automatic Type Coercion**
+JavaScript will attempt to coerce values of different types into a single, compatible type to evaluate expressions.
+
+* **Object-Oriented**:
+Objects are maps between keys and values, and the basis of most other complex data types in JavaScript. A *function* is an object which intrinsically returns something. An *array* is an object with a special relationship between enumerated keys and values.
+
+### JSON
+JSON (**JavaScript Object Notation**) is a lightweight data format resembling JavaScript objects for simple exchange of data between different programming languages.
