@@ -28,3 +28,4 @@ Notes, Demos, and Code Snippets
 - [Threads](./Demos/Threads.md)
 - [JDBC](./Demos/JDBC.md)
 - [Servlets](./Demos/Servlets.md)
+- [Angular](./Demos/Angular.md)
