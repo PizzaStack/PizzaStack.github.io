@@ -11,5 +11,16 @@ JavaScript will attempt to coerce values of different types into a single, compa
 * **Object-Oriented**:
 Objects are maps between keys and values, and the basis of most other complex data types in JavaScript. A *function* is an object which intrinsically returns something. An *array* is an object with a special relationship between enumerated keys and values.
 
+* **Prototypical Inheritance**
+Objects in JavaScript inherit properties not through is-a relationships with other object types but through a property that links another object: the prototype.
+
 ### JSON
-JSON (**JavaScript Object Notation**) is a lightweight data format resembling JavaScript objects for simple exchange of data between different programming languages.
+JSON (**JavaScript Object Notation**) is a lightweight data format resembling JavaScript objects for simple exchange of data between different programming languages. It can be saved as a text file or sent through an HTTP payload.
+#### example.json
+```json
+{
+    'id':7
+    'name':'Example Name'
+}
+```
+The `JSON` API in JavaScript can parse this into a proper Object using `JSON.parse('example.json')`, while `JSON.stringify(exampleObject)` will turn an object into a JSON string.

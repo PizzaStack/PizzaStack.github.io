@@ -21,6 +21,7 @@ Notes, Demos, and Code Snippets
 ## Tools
 - [JVM](./Notes/Tools/JVM.md)
 - [Maven](./Notes/Tools/Maven.md)
+- [AWS](./Notes/Tools/AWS.md)
 
 ## Demos
 - [Builder](./Demos/Builder.md)
