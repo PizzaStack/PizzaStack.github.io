@@ -18,6 +18,9 @@ Notes, Demos, and Code Snippets
 ## JavaScript
 - [Basics](./Notes/JavaScript/Basics.md)
 
+## DevOps
+- [CI/CD](./Notes/DevOps/CI-CD.md)
+
 ## Tools
 - [JVM](./Notes/Tools/JVM.md)
 - [Maven](./Notes/Tools/Maven.md)
