@@ -27,6 +27,7 @@ GHPages hosted site at: https://pizzastack.github.io
 - [Maven](./Notes/Tools/Maven.md)
 - [AWS](./Notes/Tools/AWS.md)
 - [Jenkins](./Notes/Tools/Jenkins.md)
+- [Bash](./Notes/Tools/Bash.md)
 
 ## Demos
 - [Builder](./Demos/Builder.md)

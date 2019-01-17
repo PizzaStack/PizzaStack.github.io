@@ -24,3 +24,16 @@ Besides the build itself, various pre-build and post-build stages can be defined
 
 ## Agents
 Jenkins jobs normally run on the master node, the server the Jenkins instance defining the pipeline shares. But distributed builds are possible through a Jenkins Agent, a separate node hosted on a different server and linked to a master node through SSH. A Jenkins master with one or more agents can run a build on these agents thereby freeing up resources on the master for other jobs.
+
+# Example Plugin use: GitHub Hooks
+Rather than poll a GitHub repository at regular intervals, Jenkins can be configured to listen to the repository for any updates, then trigger a build.
+
+## On GitHub
+On a repository, under "Settings" and "Integrations and Services", the Jenkins (GitHub plugin) service can be added and configured using  `http://<your public DNS>:8080/jenkins/github-webhook/` as the Jenkins hook URL. "Active" should be checked.
+
+Under the user's profile, "Settings", then "Personal access tokens" under "Developer settings", a user access token can be generated and assigned a repository scope. The generated token, an alphanumeric string pattern, can be copied over to Jenkins.
+
+## On Jenkins
+In "Manage Jenkins", "Global Tool configuration", The path to Git should be configured. Then Under "Configure System", then "Github", and "Add GitHub Server", the hook can be added. The API URL should be `https://api.github.com` while in "Credentials", then "Add/Jenkins" and "Kind", the "secret text" should be the generated token copied from GitHub. "Test connection" should display a message saying, "Credentials verified for user `<your github name>`... etc".
+
+Then while configuring a project job, "Git" should be chosen under "Source Code Management" specifying the repository URL and branch to build from. Afterwards the "GitHub hook trigger for GITScm polling" under "Build Triggers" should enable the feature for the pipeline.
